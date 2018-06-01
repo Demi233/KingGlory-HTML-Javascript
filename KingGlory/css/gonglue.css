@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+
+.gonglue
+{
+	margin-bottom:28px;
+	content:'\20';
+	display:block;
+	clear:both;
+}
+.gonglueleft
+{
+	width:872px;
+	height:528px;
+	margin-right:33px;
+	float:left;
+	position:relative;
+	z-index:100;
+}
+.gongluecenter
+{
+	position:relative;
+	margin-bottom:16px;
+}
+.gongluecenter .gongluetxt
+{
+	display:block;
+	width:140px;
+	height:26px;
+	background:url(../images/index.png);
+	background-position:0 -106px;
+	font-size:22px;
+	line-height:25px;
+	text-indent:33px;
+	font-weight:600;
+	letter-spacing:1px;
+}
+.gongluecenter .andmore
+{
+	display:inline-block;
+	position:absolute;
+	background:url(../images/index.png) no-repeat -252px 4px;
+	top:0;
+	right:0;
+	padding-left:22px;
+	color:#999;
+}
+.gonglueleftnav
+{
+	margin-bottom:5px;
+	width:872px;
+	height:32px;
+	line-height:29px;
+	background:#f5f5f5;
+	border-bottom:0;
+}
+.gonglueleftnav a
+{
+	width:289px;
+	display:block;
+	float:left;
+	font-size:14px;
+	color:#999;
+	text-align:center;
+	border-bottom:3px solid #f5f5f5;
+}
+.gonglueleftnav .on
+{
+	border-bottom:3px solid #f3c258;
+	color:#333333;
+}
+.shuline
+{
+	width:1px;
+	height:20px;
+	float:left;
+	background:#e1e1e1;
+	display:inline-block;
+	margin:5px 0 0;
+}
+.thenextnav
+{
+	position:relative;
+	height:26px;
+	line-height:26px;
+	padding:8px 0 9px;
+}
+.nexttitle
+{
+	height:26px;
+	text-indent:8px;
+	cursor:pointer;
+}
+.nexttitle a
+{
+	height:24px;
+	line-height:24px;
+	padding:0 15px 0 10px;
+	border:1px solid #e5e5e5;
+	border-radius:10px;
+	background:#f5f5f5;
+	font-size:14px;
+	color:#333;
+	margin-right:8px;
+	display:inline-block;
+	float:left;
+}
+.nexttitle .titleon
+{
+	border-color:#f3c258;
+	background:#f3c258;
+	color:#fff;
+}
+.choosehero
+{
+	display:inline-block;
+	padding-right:20px;
+	background:url(../images/choosehero.png) no-repeat right center;
+	color:#323235;
+}
+.gonglueconfirul li
+{
+	float:left;
+	width:209px;
+	margin:0 12px 30px 0;
+	position:relative;
+	overflow:hidden;
+}
+.gonglueconfirul .gongluelastli
+{
+	margin-right:0;
+}
+.gonglueconfirul img
+{
+	width:209px;
+	height:125px;
+}
+.gongluespan
+{
+	position:absolute;
+	top:104px;
+	left:0;
+	width:189px;
+	height:22px;
+	line-height:22px;
+	padding:0 10px;
+	color:#fff;
+	background:rgba(0,0,0,0.6);
+	font-size:12px;
+	border-radius:0 0 2px 2px;
+	overflow:hidden;
+}
+.gongluespan1
+{
+	display:block;
+	height:40px;
+	overflow:hidden;
+	color:#333;
+	margin-top:10px;
+	font:14px/1.5 "Microsoft YaHei",Tahoma,"simsun",sans-serif;
+}
+.gongluespan .play
+{
+	background:url(../images/index.png) no-repeat;
+	background-position:-256px -59px;
+	display:inline-block;
+	float:left;
+	padding-left:15px;
+}
+.gongluespan .fr
+{
+	float:right;	
+}
+.zhezao
+{
+	width:209px;
+	height:127px;
+	top:0px;
+	left:0px;
+	background:rgba(0,0,0,0.6);
+	cursor:pointer;
+	border-radius:5px;
+	position:absolute;
+	display:none;
+}
+.zhezaoimg
+{
+	width:40px;
+	height:40px;
+	display:block;
+	margin:40px auto 0;
+	background:url(../images/index.png) no-repeat;
+	background-position:-192px -64px;
+}
+.gonglueconfirul li:hover .zhezao
+{
+	display:block;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QQ注册</title>
+    <style>
+        .top{
+            width:700px;
+            height:64px;
+            float: left;
+            margin-top: 30px;
+        }
+        .top ul li{
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 40px;
+            margin-left: 1px;
+            padding: 0px;
+        }
+        .top ul li ul li{
+            list-style-type: none;
+            display:block;
+            position: relative;
+
+        }
+       /* .erji_daohang{
+            display: none;
+        }*/
+        .top ul li ul{
+            list-style-type: none;
+            display: block;
+        }
+        .liebiao{
+            display: inline;
+        }
+        .anniu button{
+            color: #fff;
+            text-align: center;
+            font-weight: lighter;
+            width: 478px;
+            height: 60px;
+            margin: 40px 0 8px;
+            font-size: 24px;
+            border-radius: 4px;
+            background-color: #3580eb;
+        }
+        .huanyingzhuce{
+            font-size: 44px;
+            margin-bottom: 17px;
+            margin-top:150px;
+            width:480px;
+            height: 59px;
+        }
+        .left_img{
+            width:600px;
+            height:800px;
+            float:left;
+            margin:0px;
+            padding: 0px;
+        }
+        .left_1{
+            width:600px;height:800px;
+            position: absolute;
+            top:0px;
+            left:0px;
+/*
+            transition: opacity 1s;
+*/
+           display: block;
+        }
+        .pic{
+            display: none;
+        }
+
+        .left_img>div>img{
+            width:600px;
+            height:800px;
+        }
+        .right{
+            float: right;width:800px;height: 900px;
+        }
+        .right_middle{
+            font-size: 28px;margin-bottom: 64px;line-height: 1.2;color: #333;
+        }
+        .right_middle span{
+            margin-left:125px;color: #359eff;font-size: 24px;
+        }
+        .nicheng{
+            width:480px;height: 54px;border:1px #777 solid; border-radius: 4px;margin-top: 20px;
+        }
+        .mima{
+            width:480px;height: 54px;border:1px #777 solid; border-radius: 4px;
+        }
+        .xialakuang{
+            width: 100px;height: 54px;margin-top:30px;border:1px #777 solid; border-radius: 4px;
+        }
+        .phone{
+            width:300px;height:54px;margin-top: 30px;border:1px #777 solid; border-radius: 4px;
+        }
+        .zhaohui{
+            font-size: 14px;height: 14px;color: #999;white-space: nowrap;margin-top: 100px;
+        }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(function () {
+            window.setInterval(function () {
+                var tupian=$(".left_img>div.left_1");
+                if(tupian.find("img").attr("src")==$(".left_img>div").last().find("img").attr("src")){
+                    tupian.removeClass("left_1");
+                    tupian.addClass("pic");
+                    $(".left_img>div").first().addClass("left_1").removeClass("pic");
+                }
+                else{
+                    tupian.removeClass("left_1");
+                    tupian.addClass("pic");
+                    tupian.next().addClass("left_1").removeClass("pic");
+                }
+            },1000);
+        })
+    </script>
+</head>
+<body>
+<div>
+    <div class="left_img" style="position:fixed;">
+        <div class="left_1" ><img src="images/01-4.jpg"></div>
+        <div class="pic"><img src="images/01-1.jpg"></div>
+        <div class="pic"> <img src="images/01-3.jpg"></div>
+    </div>
+    <div class="right">
+        <div class="top">
+            <div style="display:inline;">
+            <ul>
+                 <li class="liebiao">
+
+                    <a>
+                        <img src="images/logo3.png">
+                        <span style="color: #000;opacity: 0.6;">QQ靓号</span>
+                    </a>
+                </li>
+                <li class="liebiao">
+                    <a>
+                        <img src="images/mail-entry.png">
+                        <span style="color: #000;opacity: 0.6;">邮箱账号</span>
+                    </a>
+                </li>
+                <li class="liebiao">
+                    <a>
+                        <ul>
+                            <li>
+                                <select style="border: 0px;font-size: 16px;color: #000;opacity: 0.6;">
+                                    <option selected>简体中文</option>
+                                    <option>繁体中文<option>
+                                    <option>English</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="liebiao">
+                    <a>
+                        <span style="color: #000;opacity: 0.6;">意见反馈</span>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div style="margin-left: 100px">
+            <div class="huanyingzhuce">欢迎注册QQ</div>
+            <div class="right_middle">每一天，乐在沟通。<span>免费靓号</span></div>
+            <div>
+                <input type="text" placeholder="昵称" class="nicheng"></div>
+            <div style="margin-top: 20px;">
+                <input type="password" placeholder="密码"class="mima">
+            </div>
+            <div>
+                <div style="float:left">
+                   <select class="xialakuang">
+                       <option selected>+86</option>
+                       <option>+86香港</option>
+                       <option>+86台湾</option>
+                       <option>+86上海</option>
+                   </select>
+                </div>
+                <div style="float:left;margin-left: 80px;">
+                    <input type="text"class="phone" >
+                </div>
+            </div>
+            <div class="zhaohui">通过该手机号找回密码
+            </div>
+            <div class="anniu"><button type="button">立即注册</button></div>
+            <div><img src="images/checkbox_check.png">同时开通QQ空间</div>
+            <div><img src="images/checkbox_check.png">我已阅读并同意相关服务条款和隐私政策</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

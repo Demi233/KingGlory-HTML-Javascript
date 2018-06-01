@@ -1,0 +1,540 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+		font-family:"Microsoft YaHei",Tahoma,"simsun",sans-serif;
+	 }
+	.top{
+		background:url("images/ost-bg (1).png");
+		background-repeat:repeat-x;
+		width:100%;
+		height:40px;
+		border:1px solid #c9c9c9;
+		border-width:1px 0;
+		}
+	.topul{
+		width:980px;
+		margin:0 auto;
+		line-height:40px;
+		position:relative;
+		}
+	li	{
+		 list-style:none;
+		}
+	.topullifir{
+			background:url("images/ost-bg (1).png") no-repeat;
+			background-position:0 -40px;
+			width:205px;
+			padding:0 15px 0 0;
+			height:40px;
+			float:left;	
+			position:relative;
+			z-index: 9997;
+		}
+	.topullisec{
+		/*position:relative;*/
+		width:230px;
+		height:40px;
+		float:left;
+		}
+	.topullisec:hover .topsecimg{
+		display:block;
+	}
+	.topullithi{
+		width:233px;
+		float:right;
+		margin-left:10px;
+		height:40px;
+		cursor:pointer;
+		}
+	.topullithi a:hover{
+		color:#ff4e00; 
+		}
+	a{
+		text-decoration:none;	
+	}
+	.thirdone{
+		width:115px;
+		height:40px;
+		font-size:12px;
+		font-weight:400;
+		cursor:pointer;
+		line-height:40px;
+		font-family:Tahoma,simsun;
+		float:left;
+		}
+	.topullithi .thirdtwo{
+		width:102px;
+		font-size: 12px;
+   	    font-weight: 400;
+		font-family: Tahoma,simsun;
+		height:40px;
+		float:left;
+		}
+	.topullithi .thirdtwo .thirdtwoimg{
+		margin-top:15px;
+		float:right;
+		display:inline-block;
+		width:11px;
+		height:11px;
+		background:url("images/ost-bg (1).png") no-repeat;
+	    background-position: -150px -134px;
+		}
+	.topullithi a{
+		position:absolute;
+		color:#464646;
+		}
+	.thirdimg{
+		padding:10px 0 0 0;	
+		}
+	.topsecimg{
+		left:50%;
+		position:absolute;
+		margin: -55px 0 0 -488px;
+		display:none;
+		z-index:9001;
+		}
+	.thirdthree{
+		width:700px;
+		height:386px;
+		top:32px;
+		right:20px;
+		z-index:9000;
+		position:absolute;
+		display:none;
+		}
+    .bgiframe
+		{
+			width:720px;
+			height:470px;
+			border:none;
+			display:block;
+		}
+</style>
+    <link rel="stylesheet" type="text/css" href="css/pifu_footer.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/wrapper.css">
+    <script src="js/header.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+        /*导航条对应的jquery*/
+	$(function(){
+		$('.headercon').mouseover(function(){
+				$('.headerfoot').css('display','block');
+			}).mouseout(function(){
+				$('.headerfoot').css('display','none');
+				});
+		$('.headerfoot').mouseover(function(){
+				$('.headerfoot').css('display','block');
+			}).mouseout(function(){
+				$('.headerfoot').css('display','none');
+				});
+		/*最顶部的jquery*/
+		$('.topullithi .thirdtwo').mouseover(function(){
+				$('.topullithi .thirdtwo .thirdtwoimg').css('background-position','-170px -134px');
+				$('.topullithi .thirdtwo a').css('color','#ff4e00');
+				$('.thirdthree').css('display','block');
+				});
+			$('.topullithi .thirdtwo').mouseout(function(){
+				$('.topullithi .thirdtwo .thirdtwoimg').css('background-position','-150px -134px');
+				$('.topullithi .thirdtwo a').css('color','#464646');
+				$('.thirdthree').css('display','none');
+				});
+			$('.thirdthree').mouseover(function(){
+				$(this).css('display','block');
+			});
+			$('.thirdthree').mouseout(function(){
+				$(this).css('display','none');
+			})
+			
+	});
+</script>
+</head>
+
+<body>
+	<div class="top">
+    	<ul class="topul">
+        	<li class="topullifir">
+            	<a href="#" title="腾讯游戏logo">
+                </a>
+            </li>
+            <li class="topullisec">
+            	<img src="images/14096843271173983570150518714023040.1505187142.2a52307382f4f0149bc863880b275772.jpg">
+                   <div class="topsecimg">
+         			<a href="#">
+            			<img src="images/178412576216007218181505187140970185.1505187143.ef3d782330c38dba4ecd93582f5d91f4.jpg" width="970" height="185">
+                    </a> 
+                  </div>
+            </li>
+            <li class="topullithi">
+            	<h3 class="thirdone">
+                	<img class="thirdimg" src="images/f29500298dc5c4dd3948894b01fc968b_logo.png">
+                    <a href="#">成长守护平台</a>
+                </h3>
+                <h3 class="thirdtwo">
+                	<a href="#">腾讯游戏排行榜</a>
+                    <i class="thirdtwoimg"></i>
+                </h3>
+                <div class="thirdthree">
+                	<iframe src="tengxunyouxi_paihang.html" class="bgiframe" frameborder="0" scrolling="0"></iframe>
+                </div>
+            </li>
+         </ul>
+    </div>
+    <div class="wrapper">
+    	<div class="head">
+        	<div class="header">
+                <div class="headercon">
+                    <i>
+                    <a href="#" title="王者荣耀"></a>
+                    </i>
+                    <ul class="headerul">
+                        <li class="headerfirstli">
+                            <a href="#">
+                                官方首页
+                                <em class="homecon">HOME</em>
+                            </a>
+                        </li>
+                        <li class="headerfirstli">
+                            <a href="#">
+                                游戏资料 	
+                                <em class="homecon">DATA</em>
+                            </a>
+                        </li>
+                        <li class="headerfirstli">
+                            <a href="#">
+                                攻略中心
+                                <em class="homecon">RAIDERS</em>
+                            </a>
+                        </li>
+                        <li class="headerfirstli">
+                            <a href="#">
+                                赛事中心
+                                <em class="homecon">MATCH</em>
+                            </a>
+                        </li>
+                        <li class="headerfirstli">
+                            <a href="#">
+                                商城/合作
+                                <em class="homecon">STORE</em>
+                            </a>
+                        </li>
+                        <li class="headerfirstli">
+                            <a href="#">
+                                社区互动
+                                <em class="homecon">COMMUNITY</em>
+                            </a>
+                        </li>
+                        <li class="headerfirstli">
+                            <a href="#">
+                                玩家支持
+                                <em class="homecon">PLAYER</em>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+       			<div class="headerfoot">
+                    <ul class="headerfootul">
+                    <li class="headerfootli">&nbsp;</li>
+                    <li class="headerfootli">
+                        <a href="#">版本介绍</a>
+                        <a href="#">游戏介绍</a>
+                        <a href="#">英雄资料</a>
+                        <a href="#">爆料站</a>
+                        <a href="#">故事站</a>
+                        <a href="#">游戏壁纸</a>
+                    </li>
+                    <li class="headerfootli">
+                        <a href="#">攻略中心</a>
+                        <a href="#">英雄攻略</a>
+                        <a href="#">视频中心</a>
+                    </li>
+                    <li class="headerfootli">
+                        <a href="#">KPL职业联赛</a>
+                        <a href="#">KCC王者冠军杯</a>
+                        <a href="#">KOC王者城市赛</a>
+                        <a href="#">OGC夏季联赛</a>
+                        <a href="#">TGA大奖赛</a>
+                        <a href="#">WGC精英赛</a>
+                        <a href="#">王者高校联赛</a>
+                    </li>
+                    <li class="headerfootli">
+                        <a href="#">周边商城</a>
+                        <a href="#">王者信用站</a>
+                        <a href="#">王者文化站</a>
+                    </li>
+                    <li class="headerfootli">
+                        <a href="#">官方助手</a>
+                        <a href="#">手Q部落</a>
+                        <a href="#">微信圈子</a>
+                        <a href="#">官方微博</a>
+                        <a href="#">微信公众号</a>
+                        <a href="#">手Q订阅号</a>
+                    </li>
+                    <li class="headerfootli">
+                        <a href="#">
+                            <i class="grow"></i>
+                            成长守护平台
+                        </a>
+                        <a href="#">
+                            <i class="health"></i>
+                            健康系统
+                        </a>
+                        <a href="#">客服专区</a>
+                        <a href="#">礼包兑换</a>
+                        <a href="#">自动服务</a>
+                    </li>
+            </ul>
+        		</div>
+    		</div>
+            <div class="wrabox">
+            	<a href="#" class="viewde"></a>
+                <div class="herobox">
+                	<p>
+                    	<b>周免英雄（8月21日-8月27日）</b>
+                    </p>
+                    <ul class="herolist">
+                    	<li>
+                        	<a href="#">
+                            	<img src="images/xiao1.jpg" width="69" height="69">
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<img src="images/xiao2.jpg" width="69" height="69">
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<img src="images/xiao3.jpg" width="69" height="69">
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<img src="images/xiao4.jpg" width="69" height="69">
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<img src="images/xiao5.jpg" width="69" height="69">
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<img src="images/xiao6.jpg" width="69" height="69">
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<img src="images/xiao7.jpg" width="69" height="69">
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="morehero">更<br>多<br>英<br>雄</a>
+                </div>
+                <div class="loginbox">
+                	<a href="#" class="touxiang">
+                    	<span class="level">0</span>
+                    </a>
+                    <div class="unlogin">
+                    	<p>亲爱的召唤师,欢迎</p>
+                        <a href="#">登录</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cencercon">
+        	<div class="contop">
+            	<div class="con1">
+                	<i class="home"></i>
+                    <a href="#" >网站荣耀首页</a>
+                    <span>></span>
+                    <a href="#" >个人中心</a>
+                    <span>></span>
+                    <label>--</label>
+                </div>
+                <ul class="conul">
+                	<li class="curr">
+                    	<a href="#">个人信息</a>
+                    </li>
+                    <li class="curr1">
+                    	<a href="#">历史战绩</a>
+                    </li>
+                    <li class="curr1">
+                    	<a href="#">我的资产</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="conmiddle">
+            	<div class="xinxishow">
+                	<div class="middlebox">
+                    	<div class="middle1">
+                        	<div class="con1box">
+                            	<div class="con1show">
+                                	<div class="con1show1">
+                                    	<div class="info1">
+                                        	<i class="infoicon">
+                                            	<img src="images/per1.jpg" width="113" height="113">
+                                            </i>
+                                            <p>
+                                            	<label>-</label>
+                                                <span>(暂无战队信息)</span>
+                                            </p>
+                                        </div>
+                                        <div class="shuline1">
+                                        	
+                                        </div>
+                                        <div class="info1">
+                                        	<i class="infoicon1">
+                                            	<img src="images/per2.png" width="140" height="169">
+                                            </i>
+                                            <p class="sec1">
+                                            	信誉积分：<b>-</b>
+                                                
+                                            </p>
+                                            <p class="sec1 sec2">
+                                            	当前段位：<span class="spanlevel">-</span>
+                                                <br>
+                                                排位胜率：<span>-</span>%
+                                                <br>
+                                            </p>
+                                            
+                                        </div>
+                                        <div class="shuline1">
+                                        	
+                                        </div>
+                                        <div class="lastimg">
+                                        	<img src="images/per3.jpg" width="125" height="124">
+                                            <p class="shenglv">提高胜率，扫码再来一局</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="middle2">
+                        	<div class="middle2r">
+                            	<a href="#" class="2rhead">
+                                	<i class="mrheadicon"></i>综合数据
+                                </a>
+                                <div class="shujucenter">
+                                	<table class="tab1" border="0" cellpadding="0" cellspacing="0"padding=“0”; margin="0">
+                                    	<tr style="border-collapse: collapse;border-spacing: 0;">
+                                        	<td class="td1">
+                                                <div class="zonghe_1"></div>
+                                                <p class="zonghe_1_1">全部比赛：<span>0</span></p>
+                                            </td>
+                                            <td class="td2">
+                                                <div class="zonghe_2" style="background-position: 0 -130px;"></div>
+                                                <p class="zonghe_1_1">胜场：<span>0</span></p>
+                                            </td>
+                                            <td class="td2">
+                                                <div class="zonghe_3" style="background-position: 0 -65px;"></div>
+                                                <p class="zonghe_1_1">胜率：<span>0</span>%</p>
+                                            </td>
+                                        </tr>
+                                        <tr style="border-collapse: collapse;border-spacing: 0;">
+                                            <td class="td1">
+                                                <div class="zonghe_1"></div>
+                                                <p class="zonghe_1_1">排位赛：<span>0</span></p>
+                                            </td>
+                                            <td class="td2">
+                                                <div class="zonghe_2" style="background-position: 0 -130px;"></div>
+                                                <p class="zonghe_1_1">胜场：<span>0</span></p>
+                                            </td>
+                                            <td class="td2">
+                                                <div class="zonghe_3" style="background-position: 0 -65px;"></div>
+                                                <p class="zonghe_1_1">胜率：<span>0</span>%</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div style="width: 582px; height:360px;float:right;position: relative">
+                                <a href="#" class="leidatu">
+                                    <i class="mrheadicon"></i>雷达图
+                                </a>
+                                <div class="leidatu_1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" style="height: 169px;margin-top: 208px;">
+        <div style="width:1200px;height:76px;margin-left: 100px; position: relative">
+            <a href="#" class="foot_1"></a>
+            <a href="#" class="foot_2" style="background-position: -285px 0;"></a>
+            <a href="#" class="foot_3"></a>
+            <a href="#" class="foot_4"></a>
+            <a href="#" class="foot_5" style="background-position: -10px -72px;"></a>
+            <a href="#" class="foot_6" style="background-position: 0 -108px;"></a>
+            <a href="#" class="foot_7" style="background-position: 0 -144px;"></a>
+            <a href="#" class="foot_8" style="background-position: 0 -180px;"></a>
+            <div style="display: inline-block;float:left;width:353px;height:40px;margin-left: 938px;margin-top: -48px;">
+
+                <div class="hezuo">合作媒体<span class="hezuo_tu"></span>
+                    <ul class="xialakuang">
+                        <li>
+                            <a href="#">全球电竞网</a>
+                        </li>
+                        <li>
+                            <a href="#">全球电竞网</a>
+                        </li>
+                        <li>
+                            <a href="#">全球电竞网</a>
+                        </li>
+                        <li>
+                            <a href="#">全球电竞网</a>
+                        </li>
+                        <li>
+                            <a href="#">全球电竞网</a>
+                        </li>
+                        <li>
+                            <a href="#">全球电竞网</a>
+                        </li>
+                        <li>
+                            <a href="#">全球电竞网</a>
+                        </li>
+                        <li>
+                            <a href="#">全球电竞网</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <div class="footbottom" style="width:508px;height:90px;float:left;margin-left: 98px;">
+                <p class="footleft">温馨提示：本游戏适合16岁(含)以上玩家娱乐</p>
+                <p class="footleft_1">沉迷游戏伤身&nbsp;&nbsp;&nbsp;沉迷游戏伤身&nbsp;&nbsp;&nbsp;沉迷游戏伤身&nbsp;&nbsp;&nbsp;沉迷游戏伤身&nbsp;&nbsp;&nbsp;沉迷游戏伤身&nbsp;&nbsp;&nbsp;沉迷游戏伤身</p>
+                <p class="footleft_2">《王者荣耀》全部背景故事发生于架空世界“王者大陆”中，全部背景故事发生于架空世界“王者大陆”中，全部背景故事发生于架空世界“王者大陆”中，全部背景故事发生于架空世界“王者大陆”中，全部背景故事发生于架空世界“王者大陆”中，全部背景故事发生于架空世界“王者大陆”中，</p>
+            </div>
+            <div style="float:right;width: 600px;height: 100px;margin-top: 50px;">
+                <div class="footer_right">
+                    <p>
+                        <a href="#">腾讯互动娱乐</a>|
+                        <a href="#">腾讯互动娱乐</a>|
+                        <a href="#">腾讯互动娱乐</a>|
+                        <a href="#">腾讯互动娱乐</a>|
+                        <a href="#">腾讯互动娱乐</a>|
+                        <a href="#">腾讯互动娱乐</a>|
+                        <a href="#">腾讯互动娱乐</a>|
+                    </p>
+                </div>
+                <div class="footer_right" >
+                    <div style="float:left;font-size: 12px;color: #646467;">COPYRIGHT © 1998 – 2017 TENCENT. ALL RIGHTS RESERVED.</div>
+                    <div style="float: right;color: #646467;font-size: 12px;">腾讯公司 版权所有</div>
+                </div>
+                <div style="color: #646467;font-size: 12px;">粤网文[2017]6138-1456号 & ISBN 978-7-7979-8408-9|新出网证（粤）字010号| | 文网游备字[2016]M-CSG 0059|批准文号：新广出审[2017] 6712号 | 全国文化市场统一举报电话：12318</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
